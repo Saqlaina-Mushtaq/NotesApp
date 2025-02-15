@@ -12,15 +12,23 @@
   </head>
   <body>
     <header>
-      <div class="logo">
-        <i class="fas fa-sticky-note"></i>
-        <span>Notes App</span>
+      <div class="logo">📝 Saqi's Notes</div>
+      <div class="search-container">
+          <input type="text" id="search" placeholder="Search notes...">
       </div>
-    </header>
+      <div class="header-actions">
+          <button id="reminder-btn">Reminders</button>
+          <div class="social-icons">
+              <i class=" icon fab fa-facebook"></i>
+              <i class="icon fab fa-twitter"></i>
+              <i class="icon fab fa-instagram"></i>
+          </div>
+      </div>
+  </header>
 
     <main>
       <section class="hero">
-        <h1>Saqlain's Notes App</h1>
+        <h1>Saqlaina's Notes App</h1>
       </section>
 
       <section class="create-note">
@@ -36,12 +44,11 @@
         <h2>Your Notes</h2>
         <div id="notes-container"></div>
       </section>
+      
     </main>
 
     <div class="bubbles"></div>
-    <footer>
-      <p>&copy; 2025 Notes App. All Rights Reserved.</p>
-    </footer>
+   
 
     <script src="script.js"></script>
   </body>
