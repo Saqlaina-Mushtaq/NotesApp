@@ -218,7 +218,9 @@ button:hover {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-
+p::first-letter {
+    text-transform: uppercase;
+}
 .note-actions {
   display: flex;
   justify-content: flex-end;
