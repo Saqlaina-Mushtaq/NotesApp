@@ -1,60 +1,59 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
 
 :root {
-    --primary-color: #4a90e2;
-    --secondary-color: #f39c12;
-    --text-color: #333;
-    --marked-color: #e74c3c;
+  --primary-color: #4a90e2;
+  --secondary-color: #f39c12;
+  --text-color: #333;
+  --marked-color: #e74c3c;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    max-height:100vh;
-    background: linear-gradient(120deg, #1e3c72, #2a5298);
-    color: var(--text-color);
-    line-height: 1.6;
+  font-family: "Poppins", sans-serif;
+  max-height: 100vh;
+  background: linear-gradient(120deg, #1e3c72, #2a5298);
+  color: var(--text-color);
+  line-height: 1.6;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    padding: 10px 20px;
-    background:none;
-    color: white;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 10px 20px;
+  background: none;
+  color: white;
+  flex-wrap: wrap;
 }
 
 .logo {
-    font-size: 20px;
-    font-weight: bold;
+  font-size: 20px;
+  font-weight: bold;
 }
-
 
 .search-container input {
-    padding: 5px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+  padding: 5px 15px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
 }
-#search{
-    margin:0 !important;
+#search {
+  margin: 0 !important;
 }
 
 .header-actions {
-    display: flex;
-    align-items: center;
-    gap: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
-
-    #reminder-btn {
+/* Reminder button */
+#reminder-btn {
   padding: 8px 15px !important;
   background: #ff5722;
   color: white;
@@ -62,264 +61,284 @@ header {
   border-radius: 15px;
   cursor: pointer;
 }
-}
 
 #reminder-btn:hover {
-    background: #e64a19;
+  background: #e64a19;
 }
 
-
 .social-icons {
-    display: flex;
-    gap: 10px;
+  display: flex;
+  gap: 10px;
 }
 
 .icon {
-    width: 30px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 25px;
-    color: white;
-    border-radius: 50%;
-    transition: 0.3s ease;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  color: white;
+  border-radius: 50%;
+  border: 1px solid blue;
+  transition: 0.3s ease;
 }
 
 .icon:hover {
-    background: #ff5722;
+  background: #ff5722;
 }
-
-
-
 
 main {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px;
 }
 
-
 .hero {
-    text-align: center;
-    margin-bottom:32px;
+  text-align: center;
+  margin-bottom: 32px;
 }
 
 h1 {
-    font-size: 40px;
-    margin-bottom:16px;
-    color: white;
+  font-size: 40px;
+  margin-bottom: 16px;
+  color: white;
 }
 
 h2 {
-    font-size: 30px;
-    margin-bottom:16px;
-    color: var(--secondary-color);
+  font-size: 30px;
+  margin-bottom: 16px;
+  color: var(--secondary-color);
 }
 
 .create-note {
-    margin-bottom:32px;
+  margin-bottom: 32px;
 }
 
 #create-note-btn {
-    background: linear-gradient(45deg, orange, #FFD580);
-    color: white;
-    border: none;
-    padding: 8px 16px;
-    cursor: pointer;
-    border-radius: 8px;
-    font-size: 16px;
-    border:1px solid white;
-    transition: background-color 0.3s, transform 0.1s;
+  background: linear-gradient(45deg, orange, #ffd580);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 16px;
+  border: 1px solid white;
+  transition: background-color 0.3s, transform 0.1s;
 }
 
 #create-note-btn:hover {
-    background: linear-gradient(45deg, #0037ff, #6781e8);
-    transform: translateY(-2px);
+  background: linear-gradient(45deg, #0037ff, #6781e8);
+  transform: translateY(-2px);
 }
 
 #note-form {
-    background-color: rgba(147, 194, 231, 0.968);
-    padding: 16px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin-top: 16px;
+  background-color: rgba(147, 194, 231, 0.968);
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 16px;
 }
 
 #note-form.hidden {
-    display: none;
+  display: none;
 }
 
-input, textarea {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-family: inherit;
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
 }
 
 button {
-    background-color: var(--primary-color);
-    color: white;
-    border: none;
-    padding:8px  !important;
-    cursor: pointer;
-    border-radius:8px;
-    transition: background-color 0.3s, transform 0.1s;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 8px !important;
+  cursor: pointer;
+  border-radius: 15px;
+  transition: background-color 0.3s, transform 0.1s;
 }
 
 button:hover {
-    background-color: #3a7bc8;
-    transform: translateY(-2px);
+  background-color: #3a7bc8;
+  transform: translateY(-2px);
 }
 
 #notes-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap:16px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px;
 }
 
 .note {
-    background-color: rgb(255, 255, 255);
-    border-radius: 8px;
-    padding:16px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    position: relative;
-    overflow: hidden;
-    transition: transform 0.3s, box-shadow 0.3s;
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .note:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .note::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 10px;
-    background: linear-gradient( var(--primary-color), var(--secondary-color));
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: linear-gradient(var(--primary-color), var(--secondary-color));
 }
 
 .note.marked::before {
-    background: var(--marked-color);
+  background: var(--marked-color);
 }
 
 .note h3 {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    color: var(--primary-color);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--primary-color);
 }
-.note p{
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+.note p {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .note-actions {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 16px;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 16px;
 }
 
 .note-actions button {
-    margin-left: 8px;
-    font-size: 15px;
-    padding: 6px 9px;
+  margin-left: 8px;
+  font-size: 15px;
+  padding: 6px 9px;
+}
+.mark-btn {
+    padding:10px 15px;
+    background: linear-gradient(45deg, #0ca788, #16a085);
+    color: white;
+}
+.mark-btn:hover {
+    background: linear-gradient(45deg, #16a085, #0e6655);
+}
+.edit-btn {
+    padding:10px 15px;
+    background: linear-gradient(45deg, #218992, #468892);
+    color: white;
+}
+.edit-btn:hover {
+    background: linear-gradient(45deg, #19c011, #0fd34d);
+}
+.delete-btn {
+    padding:10px 15px;
+    background: linear-gradient(45deg, #e40707f4, #dc3915);
+    color: white;
+}
+.delete-btn:hover {
+    background: linear-gradient(45deg, #e7b00b, #644c03);
 }
 
 .bubbles {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
 }
 
 .bubble {
-    position: absolute;
-    border-radius: 50%;
-    background: rgba(13, 161, 194, 0.804);
-    animation: rise 5s infinite ease-in;
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(13, 161, 194, 0.804);
+  animation: rise 5s infinite ease-in;
 }
 
 @keyframes rise {
-    0% {
-        bottom: -100px;
-        transform: translateX(0);
-    }
-    50% {
-        transform: translateX(100px);
-    }
-    100% {
-        bottom: 1080px;
-        transform: translateX(-200px);
-    }
+  0% {
+    bottom: -100px;
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(100px);
+  }
+  100% {
+    bottom: 1080px;
+    transform: translateX(-200px);
+  }
 }
 
 @media (max-width: 768px) {
-    main {
-        padding: 16px;
-    }
+  main {
+    padding: 16px;
+  }
 
-    h1 {
-        font-size: 32px;
-    }
+  h1 {
+    font-size: 32px;
+  }
 
-    h2 {
-        font-size: 24px;
-    }
+  h2 {
+    font-size: 24px;
+  }
 
-    #notes-container {
-        grid-template-columns: 1fr;
-    }
+  #notes-container {
+    grid-template-columns: 1fr;
+  }
 
-    header {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
-    .search-container {
-        width: 100%;
-        margin: 10px 0;
-    }
+  .search-container {
+    width: 100%;
+    margin: 10px 0;
+  }
 
-    .search-container input {
-        width: 90%;
-    }
+  .search-container input {
+    width: 80%;
+  }
 
-    .header-actions {
-        flex-direction: column;
-        gap: 10px;
-    }
+  .header-actions {
+    flex-direction: column;
+    gap: 10px;
+  }
 
-    .social-icons {
-        justify-content: center;
-    }
+  .social-icons {
+    justify-content: center;
+  }
 }
 
 @media (max-width: 480px) {
-    .logo {
-        font-size: 18px;
-    }
+  .logo {
+    font-size: 18px;
+  }
 
-    .icon {
-        width: 30px;
-        height: 30px;
-        font-size: 16px;
-    }
+  .icon {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+  }
 
-    #reminder-btn {
-        padding: 5px 8px;
-        font-size: 14px;
-    }
+  #reminder-btn {
+    padding: 5px 8px;
+    font-size: 14px;
+  }
 }
