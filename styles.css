@@ -281,7 +281,7 @@ p::first-letter {
   }
 }
 .marked {
-  background-color: yellow; /* Change to any color you like */
+   background-color: rgb(38, 255, 0);
 }
 
 footer {
