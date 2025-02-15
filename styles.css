@@ -115,7 +115,7 @@ h2 {
   margin-bottom: 16px;
   color: var(--secondary-color);
 }
-
+ /* create note section*/
 .create-note {
   margin-bottom: 32px;
 }
@@ -175,7 +175,7 @@ button:hover {
   background-color: #3a7bc8;
   transform: translateY(-2px);
 }
-
+/*notes list section*/
 #notes-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -215,6 +215,7 @@ p::first-letter {
 }
 .note-actions {
   display: flex;
+  position:relative;
   justify-content: flex-end;
   margin-top: 16px;
 }
@@ -253,21 +254,20 @@ p::first-letter {
 .note {
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  max-height: 300px;
   overflow: hidden;
   position: relative;
 }
 
 .note.expanded {
   max-height: 100%;
-  width: 90%;
-  height: auto;
+  width: 80%;
   position: fixed;
   top: 10%;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1000;
-  background: white;
+  background: rgb(56, 53, 53);
+  color: white;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   padding: 20px;
   border-radius: 8px;
@@ -323,7 +323,7 @@ p::first-letter {
   }
 }
 .marked {
-  background-color: rgb(38, 255, 0); 
+  background-color: rgb(168, 220, 191); 
 }
 
 
