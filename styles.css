@@ -33,7 +33,7 @@ header {
 }
 
 .logo {
-  font-size: 20px;
+    text-transform: uppercase;
   font-weight: bold;
 }
 
@@ -100,6 +100,7 @@ main {
 }
 
 h1 {
+  text-transform:capitalize;
   font-size: 40px;
   margin-bottom: 16px;
   color: white;
@@ -205,6 +206,7 @@ button:hover {
 }
 
 .note h3 {
+ text-transform: capitalize;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
