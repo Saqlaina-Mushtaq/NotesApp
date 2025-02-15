@@ -62,9 +62,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function toggleMark(index) {
     notes[index].marked = !notes[index].marked;
+
+    if (notes[index].marked) {
+        // Move marked note to the top
+        const markedNote = notes.splice(index, 1)[0];
+        notes.unshift(markedNote);
+    } else {
+        // Move unmarked note back to its original position
+        const unmarkedNote = notes.splice(index, 1)[0];
+        notes.push(unmarkedNote);
+    }
+
     saveNotesToLocalStorage();
     renderNotes();
-  }
+}
+
 
   createNoteBtn.addEventListener("click", () => {
     if (noteForm.classList.contains("hidden")) {
