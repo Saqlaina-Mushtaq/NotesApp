@@ -197,20 +197,6 @@ button:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-.note::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 10px;
-  background: linear-gradient(var(--primary-color), var(--secondary-color));
-}
-
-.note.marked::before {
-  background: var(--marked-color);
-}
-
 .note h3 {
  text-transform: capitalize;
   white-space: nowrap;
@@ -293,6 +279,9 @@ p::first-letter {
     bottom: 1080px;
     transform: translateX(-200px);
   }
+}
+.marked {
+  background-color: yellow; /* Change to any color you like */
 }
 
 footer {
