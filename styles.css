@@ -97,7 +97,7 @@ main {
   max-height: 100%;
   padding: 32px;
 }
-
+/*hero section*/
 .hero {
   text-align: center;
   margin-bottom: 32px;
@@ -249,6 +249,48 @@ p::first-letter {
 .delete-btn:hover {
     background: linear-gradient(45deg, #e7b00b, #644c03);
 }
+
+.note {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  max-height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+.note.expanded {
+  max-height: 100%;
+  width: 90%;
+  height: auto;
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  background: red;
+  color: white;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  line-height: 25px;
+}
+.close-btn:hover {
+  background: darkred;
+}
+
 /*bubble animations*/
 .bubbles {
   position: fixed;
