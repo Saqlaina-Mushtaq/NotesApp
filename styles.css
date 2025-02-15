@@ -234,26 +234,27 @@ p::first-letter {
   font-size: 15px;
   padding: 6px 9px;
 }
-.mark-btn {
-    padding:10px 15px;
-    background: linear-gradient(45deg, #0ca788, #16a085);
+.mark-btn,.edit-btn,
+.delete-btn {
+    padding:10px 15px !important;
     color: white;
+}
+.mark-btn {
+    background: linear-gradient(45deg, #0ca788, #16a085);
+   
 }
 .mark-btn:hover {
     background: linear-gradient(45deg, #16a085, #0e6655);
 }
 .edit-btn {
-    padding:10px 15px;
     background: linear-gradient(45deg, #218992, #468892);
-    color: white;
+    
 }
 .edit-btn:hover {
     background: linear-gradient(45deg, #19c011, #0fd34d);
 }
 .delete-btn {
-    padding:10px 15px;
     background: linear-gradient(45deg, #e40707f4, #dc3915);
-    color: white;
 }
 .delete-btn:hover {
     background: linear-gradient(45deg, #e7b00b, #644c03);
