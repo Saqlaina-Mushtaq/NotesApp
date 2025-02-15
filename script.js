@@ -35,13 +35,13 @@ document.addEventListener("DOMContentLoaded", () => {
       notesContainer.appendChild(noteElement);
     });
   }
-
+//function of addnotebtn
   function addNote(title, description) {
     notes.push({ title, description, marked: false });
     saveNotesToLocalStorage();
     renderNotes();
   }
-
+//function of deletebtn
   function deleteNote(index) {
     if (confirm("Do you want to delete this note?")) {
       notes.splice(index, 1);
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
       renderNotes();
     }
   }
-
+//function of editbtn
   function editNote(index) {
     const note = notes[index];
     noteTitle.value = note.title;
@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
     createNoteBtn.textContent = "Cancel";
     saveNoteBtn.textContent = "Update Note";
   }
-
+// function of markbtn
   function toggleMark(index) {
     notes[index].marked = !notes[index].marked;
 
@@ -76,6 +76,26 @@ document.addEventListener("DOMContentLoaded", () => {
     saveNotesToLocalStorage();
     renderNotes();
 }
+
+//read  mode
+notesContainer.addEventListener("dblclick", (e) => {
+  const noteElement = e.target.closest(".note");
+  if (noteElement) {
+      noteElement.classList.add("expanded");
+
+      // Create a close button if it doesn't already exist
+      if (!noteElement.querySelector(".close-btn")) {
+          const closeButton = document.createElement("span");
+          closeButton.textContent = "×";
+          closeButton.classList.add("close-btn");
+          closeButton.addEventListener("click", () => {
+              noteElement.classList.remove("expanded");
+          });
+          noteElement.appendChild(closeButton);
+      }
+  }
+});
+
 
 
   createNoteBtn.addEventListener("click", () => {
