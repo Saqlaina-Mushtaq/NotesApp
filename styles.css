@@ -132,7 +132,9 @@ h2 {
   background: linear-gradient(45deg, #0037ff, #6781e8);
   transform: translateY(-2px);
 }
-
+#note-description{
+    height: 200px;
+}
 #note-form {
   background-color: rgba(147, 194, 231, 0.968);
   padding: 16px;
