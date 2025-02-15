@@ -15,10 +15,14 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  max-height: 100vh;
+  min-height: 100vh;
   background: linear-gradient(120deg, #1e3c72, #2a5298);
   color: var(--text-color);
   line-height: 1.6;
+}
+main {
+    flex: 1;
+    padding: 20px; 
 }
 
 header {
@@ -52,7 +56,6 @@ header {
   gap: 15px;
 }
 
-/* Reminder button */
 #reminder-btn {
   padding: 8px 15px !important;
   background: #ff5722;
@@ -91,6 +94,7 @@ header {
 main {
   max-width: 1200px;
   margin: 0 auto;
+  max-height: 100%;
   padding: 32px;
 }
 
@@ -290,6 +294,20 @@ p::first-letter {
     transform: translateX(-200px);
   }
 }
+
+footer {
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    height: 60px;             
+    background: #0b012d;        
+    color: white;             
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+
 
 @media (max-width: 768px) {
   main {
