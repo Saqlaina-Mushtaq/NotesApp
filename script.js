@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
         note.marked ? "Unmark" : "Mark"
       }</button>
                   <button class="edit-btn" data-index="${index}"><i class="fas fa-pen"></i></button>
-                  <button class="delete-btn" data-index="${index}"><i class="fas fa-trash"></i></button>
+                  <button class="delete-btn" data-index="${index}">Delete</button>
               </div>
           `;
       notesContainer.appendChild(noteElement);
