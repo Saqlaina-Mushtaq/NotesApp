@@ -33,7 +33,7 @@ header {
 }
 
 .logo {
-    text-transform: uppercase;
+  text-transform: uppercase;
   font-weight: bold;
 }
 
@@ -91,7 +91,7 @@ header {
 
 main {
   flex: 1;
-  padding: 20px; 
+  padding: 20px;
   max-width: 1200px;
   margin: 0 auto;
   max-height: 100%;
@@ -104,7 +104,7 @@ main {
 }
 
 h1 {
-  text-transform:capitalize;
+  text-transform: capitalize;
   font-size: 40px;
   margin-bottom: 16px;
   color: white;
@@ -115,7 +115,7 @@ h2 {
   margin-bottom: 16px;
   color: var(--secondary-color);
 }
- /* create note section*/
+/* create note section*/
 .create-note {
   margin-bottom: 32px;
 }
@@ -136,8 +136,8 @@ h2 {
   background: linear-gradient(45deg, #0037ff, #6781e8);
   transform: translateY(-2px);
 }
-#note-description{
-    height: 200px;
+#note-description {
+  height: 200px;
 }
 #note-form {
   background-color: rgba(147, 194, 231, 0.968);
@@ -198,7 +198,7 @@ button:hover {
 }
 
 .note h3 {
- text-transform: capitalize;
+  text-transform: capitalize;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -209,13 +209,16 @@ button:hover {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  white-space: normal;  
+  word-wrap: break-word; 
+  overflow-wrap: break-word;
 }
 p::first-letter {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 .note-actions {
   display: flex;
-  position:relative;
+  position: relative;
   justify-content: flex-end;
   margin-top: 16px;
 }
@@ -225,30 +228,29 @@ p::first-letter {
   font-size: 15px;
   padding: 6px 9px;
 }
-.mark-btn,.edit-btn,
+.mark-btn,
+.edit-btn,
 .delete-btn {
-    padding:10px 15px !important;
-    color: white;
+  padding: 10px 15px !important;
+  color: white;
 }
 .mark-btn {
-    background: linear-gradient(45deg, #0ca788, #16a085);
-   
+  background: linear-gradient(45deg, #0ca788, #16a085);
 }
 .mark-btn:hover {
-    background: linear-gradient(45deg, #16a085, #0e6655);
+  background: linear-gradient(45deg, #16a085, #0e6655);
 }
 .edit-btn {
-    background: linear-gradient(45deg, #218992, #468892);
-    
+  background: linear-gradient(45deg, #218992, #468892);
 }
 .edit-btn:hover {
-    background: linear-gradient(45deg, #19c011, #0fd34d);
+  background: linear-gradient(45deg, #19c011, #0fd34d);
 }
 .delete-btn {
-    background: linear-gradient(45deg, #e40707f4, #dc3915);
+  background: linear-gradient(45deg, #e40707f4, #dc3915);
 }
 .delete-btn:hover {
-    background: linear-gradient(45deg, #e7b00b, #644c03);
+  background: linear-gradient(45deg, #e7b00b, #644c03);
 }
 
 .note {
@@ -262,7 +264,7 @@ p::first-letter {
   max-height: 100%;
   width: 80%;
   position: fixed;
-  top: 10%;
+  top: 20%;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1000;
@@ -271,6 +273,15 @@ p::first-letter {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   padding: 20px;
   border-radius: 8px;
+}
+.note.expanded p {
+  display: block;
+  overflow: hidden;
+  white-space: normal;
+  text-wrap: wrap;
+  white-space: normal;  
+  word-wrap: break-word; 
+  overflow-wrap: break-word;
 }
 
 .close-btn {
@@ -323,22 +334,20 @@ p::first-letter {
   }
 }
 .marked {
-  background-color: rgb(168, 220, 191); 
+  background-color: rgb(168, 220, 191);
 }
-
-
 
 /*footer*/
 footer {
-    display: flex;
-    justify-content: center;  
-    align-items: center;      
-    height: 60px;             
-    background: #0b012d;        
-    color: white;             
-    text-align: center;
-    padding: 10px;
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  background: #0b012d;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
 }
 
 /*media queries*/
